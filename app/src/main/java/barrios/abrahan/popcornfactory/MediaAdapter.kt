@@ -2,6 +2,7 @@ package barrios.abrahan.popcornfactory
 
 import android.content.Context
 import android.content.Intent
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -41,11 +42,15 @@ class MediaAdapter : BaseAdapter {
         title.setText(media.title)
 
         image.setOnClickListener(){
+            var seatsAvailable= 20 - media.seats.size
+            Log.d("SEATS", "$seatsAvailable")
             var intento= Intent(context, MediaDetailActivity::class.java)
             intento.putExtra("title",media.title)
             intento.putExtra("sinopsis",media.sinopsis)
             intento.putExtra("header",media.header)
             intento.putExtra("image",media.image)
+            intento.putExtra("numberSeats",seatsAvailable)
+            intento.putExtra("pos",p0)
             context!!.startActivity(intento)
         }
 

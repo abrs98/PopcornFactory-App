@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SeatReservationActivity"
+    android:background="@color/black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="120dp"
+            android:layout_height="2dp"
+            android:background="@color/mustard"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="30dp"
+            />
+
+        <TextView
+            android:id="@+id/title_seats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/mustard"
+            android:text="@string/reservation"
+            android:textAllCaps="true"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="bold"
+            android:layout_marginLeft="0dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/mustard"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="30dp"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/seat_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/mustard"
+        android:text="@string/reservation"
+        android:layout_gravity="center"
+        android:textAllCaps="true"
+        android:fontFamily="sans-serif-condensed"
+        android:textStyle="bold"
+        android:layout_marginLeft="0dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/client_name"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/input_margin"
+        android:layout_gravity="center"
+        android:textColorHint="@color/grisclaro"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="@string/name"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/payment"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/input_margin"
+        android:textColor="@color/black"
+        android:textColorHint="@color/grisclaro"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="@string/payment"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/reservate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_button"
+        android:textColor="@color/black"
+        android:text="Reservate"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:paddingHorizontal="70dp"/>
+
+
+
+
+
+</LinearLayout>

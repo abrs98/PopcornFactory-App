@@ -4,5 +4,8 @@
     <string name="start_button">Get me in!</string>
     <string name="movies">Movies</string>
     <string name="series">Series</string>
+    <string name="reservation">Reservation</string>
+    <string name="name">Client Name</string>
+    <string name="payment">Payment Method</string>
 
 </resources>
